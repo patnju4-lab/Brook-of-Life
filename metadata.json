@@ -1,0 +1,8 @@
+{
+  "name": "Brooks of Life Schools of Ministry -UK-",
+  "description": "Comprehensive online theological education and LMS platform for Brooks of Life Schools of Ministry -UK- (BLSM) featuring academic programs, course player, TEMS examination management, student progress tracking, faculty grading, digital library, and institutional administration.",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
