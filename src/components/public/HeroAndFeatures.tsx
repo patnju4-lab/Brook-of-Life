@@ -118,6 +118,14 @@ export const HeroAndFeatures: React.FC<HeroAndFeaturesProps> = ({ onOpenAuth }) 
                   <span>Go to My Portal</span>
                 </button>
               )}
+
+              <button
+                onClick={() => navigateTo('brooks-of-life-tv')}
+                className="px-5 py-3.5 bg-rose-950/60 hover:bg-rose-900/70 text-rose-200 border border-rose-600/50 font-semibold rounded-xl text-sm transition-colors cursor-pointer flex items-center space-x-2 shadow-md shadow-rose-950/30"
+              >
+                <span className="w-2 h-2 rounded-full bg-rose-500 animate-pulse"></span>
+                <span>Brooks of Life TV</span>
+              </button>
             </div>
 
             {/* Key Institutional Metrics */}

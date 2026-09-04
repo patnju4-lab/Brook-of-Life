@@ -158,6 +158,13 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenAuth }) => {
             Resources
           </button>
           <button 
+            onClick={() => handleNav('brooks-of-life-tv')} 
+            className={`transition-colors cursor-pointer pb-0.5 flex items-center space-x-1.5 ${activeView === 'brooks-of-life-tv' ? 'text-[#c4a47c] border-b border-[#c4a47c]' : 'text-slate-300 hover:text-[#c4a47c]'}`}
+          >
+            <span className="w-1.5 h-1.5 rounded-full bg-rose-500 animate-pulse"></span>
+            <span>Brooks of Life TV</span>
+          </button>
+          <button 
             onClick={() => handleNav('admissions')} 
             className={`transition-colors cursor-pointer pb-0.5 ${activeView === 'admissions' ? 'text-[#c4a47c] border-b border-[#c4a47c]' : 'hover:text-slate-200'}`}
           >
@@ -369,6 +376,13 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenAuth }) => {
           <button onClick={() => handleNav('library')} className="w-full text-left py-2 px-3 rounded hover:bg-white/5 font-medium">Theological Library</button>
           <button onClick={() => handleNav('ministry-resources')} className="w-full text-left py-2 px-3 rounded hover:bg-white/5 font-medium">Ministry Resources</button>
           <button onClick={() => handleNav('events')} className="w-full text-left py-2 px-3 rounded hover:bg-white/5 font-medium">Seminary Events</button>
+          <button onClick={() => handleNav('brooks-of-life-tv')} className="w-full text-left py-2 px-3 rounded hover:bg-white/5 font-medium flex items-center justify-between text-[#c4a47c]">
+            <span className="flex items-center space-x-2">
+              <span className="w-2 h-2 rounded-full bg-rose-500 animate-pulse"></span>
+              <span>Brooks of Life TV</span>
+            </span>
+            <span className="px-1.5 py-0.5 rounded bg-rose-600 text-white text-[9px] font-bold">LIVE</span>
+          </button>
           <button onClick={() => handleNav('verify-certificate')} className="w-full text-left py-2 px-3 rounded hover:bg-white/5 font-medium text-[#c4a47c]">Verify Certificate Online</button>
           <button onClick={() => handleNav('admissions')} className="w-full text-left py-2 px-3 rounded bg-[#c4a47c] text-[#0a0a0b] font-bold text-xs">Apply for Admission</button>
         </div>

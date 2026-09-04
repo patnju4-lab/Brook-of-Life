@@ -16,6 +16,7 @@ import { CertificateVerificationPage } from './components/public/CertificateVeri
 import { MinistryResourceCenterPage } from './components/public/MinistryResourceCenterPage';
 import { DigitalLibraryPublicPage } from './components/public/DigitalLibraryPublicPage';
 import { ContactSupportPage } from './components/public/ContactSupportPage';
+import { BrooksOfLifeTV } from './components/public/BrooksOfLifeTV';
 
 // Student Portal Pages
 import { StudentDashboard } from './components/student/StudentDashboard';
@@ -104,6 +105,7 @@ const MainContent: React.FC = () => {
             {activeView === 'verify-certificate' && <CertificateVerificationPage />}
             {activeView === 'ministry-resources' && <MinistryResourceCenterPage />}
             {activeView === 'library' && <DigitalLibraryPublicPage />}
+            {(activeView === 'brooks-of-life-tv' || activeView === 'tv' || activeView === 'live-tv') && <BrooksOfLifeTV />}
             {(activeView === 'contact' || activeView === 'contact-support') && <ContactSupportPage />}
           </main>
         )}

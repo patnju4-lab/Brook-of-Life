@@ -137,6 +137,12 @@ export const Footer: React.FC = () => {
                 Ministry Resource Center
               </button>
             </li>
+            <li>
+              <button onClick={() => navigateTo('brooks-of-life-tv')} className="hover:text-[#c4a47c] text-[#c4a47c] font-semibold transition flex items-center space-x-1.5">
+                <span className="w-1.5 h-1.5 rounded-full bg-rose-500 animate-pulse"></span>
+                <span>Brooks of Life TV (Live)</span>
+              </button>
+            </li>
           </ul>
         </div>
 
